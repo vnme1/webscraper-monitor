@@ -1,0 +1,21 @@
+{
+  "monitor_urls": [
+    {
+      "url": "https://example.com/product/1",
+      "name": "상품1",
+      "max_price": 50000,
+      "enabled": true
+    },
+    {
+      "url": "https://example.com/product/2",
+      "name": "상품2",
+      "max_price": 100000,
+      "enabled": true
+    }
+  ],
+  "notification": {
+    "discord": true,
+    "telegram": false,
+    "email": false
+  }
+}

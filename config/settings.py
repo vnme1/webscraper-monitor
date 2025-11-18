@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DATABASE_URL = f"sqlite:///{BASE_DIR}/data/monitor.db"
 
 # 스케줄러 설정
-SCHEDULE_INTERVAL_MINUTES = 60  # 1시간마다 실행
+SCHEDULE_INTERVAL_MINUTES = 10  # 10분 실행
 
 # 로그 설정
 LOG_DIR = BASE_DIR / "logs"

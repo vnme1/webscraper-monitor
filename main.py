@@ -15,6 +15,8 @@ MONITOR_URLS = [
     # 여기에 모니터링할 상품 URL을 추가하세요
     # "https://example.com/product/1",
     # "https://example.com/product/2",
+    "https://www.coupang.com/vp/products/7654321098",  # 쿠팡 예시
+    "https://smartstore.naver.com/cotini/products/5663284952",  # 네이버 쇼핑 예시
 ]
 
 def monitor_prices():
@@ -53,7 +55,7 @@ def monitor_prices():
                         if settings.ENABLE_DISCORD:
                             notifier = DiscordNotifier()
                             notifier.send_price_alert(product_data)
-                            
+
                 except Exception as e:
                     logger.error(f"상품 처리 실패: {url} - {e}")
                     continue

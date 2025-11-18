@@ -23,7 +23,8 @@ REQUEST_TIMEOUT = 10  # 초
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 
 # 알림 설정
-ENABLE_TELEGRAM = True
+ENABLE_TELEGRAM = False
+ENABLE_DISCORD = True  # ← 추가
 ENABLE_SLACK = False
 ENABLE_EMAIL = False
 

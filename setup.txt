@@ -1,0 +1,32 @@
+webscraper-monitor/
+├── config/                      # 설정 관리
+│   ├── __init__.py             # secrets 로더
+│   ├── settings.py             # 기본 설정 (URL, 간격 등)
+│   └── secrets.example.json    # API 키 예제
+│
+├── scrapers/                    # 스크래핑 모듈
+│   ├── __init__.py
+│   ├── base_scraper.py         # 공통 스크래퍼 (추상 클래스)
+│   └── shop_scraper.py         # 쇼핑몰 스크래퍼
+│
+├── storage/                     # 데이터 저장
+│   ├── __init__.py
+│   ├── models.py               # SQLAlchemy 모델
+│   └── db.py                   # DB 연동 로직
+│
+├── notifier/                    # 알림 시스템
+│   ├── __init__.py
+│   └── telegram_notifier.py    # 텔레그램 알림
+│
+├── scheduler/                   # 작업 스케줄러
+│   ├── __init__.py
+│   └── scheduler.py            # APScheduler 래퍼
+│
+├── utils/                       # 유틸리티
+│   ├── __init__.py
+│   └── logger.py               # 로깅 설정
+│
+├── main.py                      # 실행 진입점
+├── requirements.txt             # 의존성
+├── README.md                    # 프로젝트 소개
+└── USAGE.md                     # 사용 가이드

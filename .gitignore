@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# 데이터베이스
+*.db
+*.sqlite
+*.sqlite3
+data/
+
+# 로그
+logs/
+*.log
+
+# 설정 파일 (민감 정보)
+config/secrets.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

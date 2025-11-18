@@ -1,0 +1,18 @@
+# 웹 스크래핑
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==5.1.0
+selenium==4.15.2
+
+# 데이터베이스
+sqlalchemy==2.0.23
+
+# 스케줄링
+apscheduler==3.10.4
+
+# 알림
+python-telegram-bot==20.7
+slack-sdk==3.26.1
+
+# 유틸리티
+python-dotenv==1.0.0

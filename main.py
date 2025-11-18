@@ -3,7 +3,7 @@ WebScraper Monitor - 메인 실행 파일
 """
 from scrapers import ShopScraper
 from storage import Database
-from notifier import TelegramNotifier
+from notifier import TelegramNotifier, DiscordNotifier  # ← Discord 추가
 from scheduler import TaskScheduler
 from config import settings
 from utils import setup_logger
@@ -49,7 +49,11 @@ def monitor_prices():
                         if settings.ENABLE_TELEGRAM:
                             notifier = TelegramNotifier()
                             notifier.send_price_alert(product_data)
-                    
+                        
+                        if settings.ENABLE_DISCORD:
+                            notifier = DiscordNotifier()
+                            notifier.send_price_alert(product_data)
+                            
                 except Exception as e:
                     logger.error(f"상품 처리 실패: {url} - {e}")
                     continue
